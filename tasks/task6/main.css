@@ -1,0 +1,107 @@
+*{
+    box-sizing:border-box;
+}
+
+header{
+    display:sticky;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:5px 15px;
+    background-color: rgb(116, 9, 217);
+    border-radius:7px;
+}
+
+.nav-bar ul{
+    list-style-type:none;
+    display:flex;
+    gap:10px;
+}
+
+header a{
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    color:rgb(243, 238, 238);
+}
+
+.codopia-logo img{
+    width:100px;
+}
+
+footer{
+    height:200px;
+    position:absolute;
+    bottom:0;
+    background-color: rgb(116, 9, 217);
+    width:100%;
+    padding:7px 15px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+footer ul{
+    list-style-type:none;
+    display:flex;
+    justify-content: space-around;
+    margin:0;
+    padding:0;
+
+}
+
+footer img{
+    width:30px;
+}
+
+footer .contact, .about{
+    text-align: center;
+    margin:5px 10px;
+    padding:15px;
+}
+
+.about{
+    width:250px;
+}
+
+main{
+    display:flex;
+    justify-content:space-around;
+    padding:10px;
+    gap:20px
+}
+
+aside{
+    /* width:300px; */
+    margin-left:15px;
+}
+
+.available-courses{
+    display:flex;
+    justify-content:space-between;
+    margin:10px;
+    width:400px;
+}
+
+.content-container{
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    text-align: center;
+}
+
+.tags-container img{
+    width:40px;
+}
+
+.tags-container ul{
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding:0;
+    gap:20px;
+}
+
