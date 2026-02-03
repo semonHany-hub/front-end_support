@@ -1,13 +1,43 @@
-- by default the elements box-sizing property has the value content-box. It means that when we set width 200px and padding 30px the total width will be 230px
+ * 'joshWcomeau' website show sweet free documents on styles and react.
+
+                                box model 
+- by default the elements box-sizing property has the value content-box. It means that when we set width 200px and padding 30px the total width will be 260px
   ,so its better to set global style to the document elements to have box-sizing:border-box to include both content and padding dimensions.
+- display: block, inline, inline-block, none.
 - Inline elements do not have an explicit width; their size is determined by their content.
   They cannot accept width or height properties., unlike the block elements which have width: auto by default, which usually makes them stretch to 100% of their container. 
   img element is inline despite it has width and height properties to be set that's because they control the content size not the container box itself.
 - some elements have default margin and padding properties so we set them to 0 with a global selector '*' when we want to reset them manually later.
+                               
+                                 position
 - the default position of html elements is 'static'
 - element with position: relative is offset (top, right, bottom, left) relative to its original position.
 - an element with position: absolute is positioned relative to the nearest ancestor with a position other than static.
   If no such ancestor exists, it is positioned relative to the initial containing block (viewport).
 - position: sticky often used with the header nav-bar to stick to the page upper limit while scrolling. to work muse set one of(top, bottom) dimension where the element will stick.
-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>  embedd the fontAwesome icons in the document.
+
+                            fontawesome icons
+- to enable using fontAwesome icons in the document add one of these two link tags provided by csnjs website:
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 - most font icons are of type fa-solid, some others of type fa-regular or fa-brands.
+                                  
+                                  flex box
+*parent container styles:                                 
+- display-> flex
+- flex-direction-> column, row, column-reverse, row-reverse  (set the main and cross axis, the reverse part reverse both the items order and end-start)
+- flex-wrap-> nowrap(default), wrap
+- flex-flow shorthand-> flex-direction flex-wrap;
+- align-items-> stretch, baseline, center, flex-start, flex-end  (work on the cross axis)
+- align-content-> stretch, center, flex-start, flex-end, space-between,evenly,around (set how multiple lines are spaced apart from each other)
+- justify-content-> space-between, space-around, space-evenly, center, flex-start, flex-end  (work on the main axis)
+
+*children items styles:
+- flex-grow: control how the item will grow relatively to the available width space from its container (appear with big width container)
+- flex-shrink: control how the items will shrink to make the the total items match the available space from the container. (works when total items exceed container width, especially with flex-wrap:nowrap prop)
+- flex-basis: acts as the width property
+- align-self: flex-start, flex-end, center  (differ from align-items in that it aligns individual item with limited available values)
+- flex shorthand: flex-grow flex-shrink flex-basis
+- order: the default value is 0. items with custom lower order(-1) comes first and vice versa.
+
+- semantic elements (header, footer, main, aside, section) used for SEO.
