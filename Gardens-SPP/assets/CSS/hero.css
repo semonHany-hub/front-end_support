@@ -1,0 +1,166 @@
+.header {
+    background-color: transparent;
+    width:100%;
+    padding:0.3em 0.7em;
+    display:flex;
+    justify-content:space-around;
+    gap:0.5em;
+    align-items:center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-bar ul{
+    display: flex;
+    gap: 1.5em;
+    list-style-type: none;
+}
+
+.header a{
+    text-decoration: none;
+    color: var(--white);
+    font-size:0.8em;
+}
+
+.logo{
+    font-size:1.7em;
+    font-weight:bold;
+}
+
+.hero{
+    background-image:url("../images/hero.png");
+    background-position:center;
+    background-size: cover;
+    padding: 0.4em 0.7em;
+    min-height: 90vh;
+    color:var(--white);
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-family: var(--font-family);
+}
+
+.hero h1{
+    font-size:3.5em;
+    margin-top:0.6em;
+    margin-bottom:0.1em;
+    font-weight: bolder;
+    letter-spacing: 0.02em;
+}
+
+.hero p{
+    font-size:0.8em;
+    margin-top:1em;
+}
+
+.bg-primary{
+    background-color:var(--primary-color);
+    color: var(--white);
+    border:none;
+}
+
+.bg-white{
+    background-color:var(--white);
+    color: var(--primary-color);
+    border:none;
+}
+
+.auth button{
+    padding:0.6em 1.2em;
+    border-radius:1.2em;
+    cursor:pointer;
+    font-size:0.8em;
+}
+
+.btn-group, .auth{
+    display:flex;
+    gap:1em;
+}
+
+.btn-group{
+    margin:2em 0.5em;
+}
+
+.btn-group button{
+    border-radius:1.7em;
+    padding:1.2em 1.6em;
+    cursor:pointer;
+    font-size:0.8em;
+}
+
+.bg-primary:hover{
+    background-color: var(--primary-hover);
+    /* color: var(--white); */
+}
+
+.bg-white:hover{
+    background-color: var(--primary-light);
+    /* color: var(--primary-color); */
+}
+
+.story{
+    background-color:var(--white);
+    color:var(--black);
+    width:70%;
+    border-radius:0.7em;
+    margin:1em 0.4em 0.5em ;
+}
+
+.story ul{
+    display:flex;
+    list-style-type:none;
+    margin:1em 0em;
+    padding:0.5em 1em;
+    justify-content:space-around;
+}
+
+.story li:last-child{
+    border-right:none;
+}
+
+.story li{
+    border-right:1px solid var(--dark-gray);
+    padding:0.5em 1em;
+    text-align: center;
+}
+
+.story p{
+    font-size:0.6em;
+    color:var(--dark-gray);
+}
+
+.rate{
+    font-weight:bold;
+    font-size: 1.4em;
+}
+
+.plus-sign{
+    color:var(--primary-color);
+}
+
+@media (max-width: 600px){
+    .nav-bar ul{
+        display:flex;
+        gap:1em;
+    }
+
+    .logo{
+        font-size:1.4em;
+    }
+
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .hero h1{
+        font-size:2.5em;
+    }
+
+    .story ul{
+        flex-wrap: wrap;
+    }
+
+    .rate{
+        font-size: 1.1em;
+    }
+}

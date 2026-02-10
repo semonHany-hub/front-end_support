@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--white);
+}
+.contact-container {
+  width: var(--container-width);
+  margin: 0 auto;
+}
+
+.contact-head {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+.contact-head h1 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+.contact-head h1 span {
+  color: var(--black);
+}
+.contact-head p {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.contact-body {
+  display: flex;
+
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: 1000px;
+  min-height: 450px;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  transition: 0.4s ease-in-out;
+}
+.contact-body:hover {
+  scale: 1.05;
+}
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 50px;
+  color: white;
+  justify-content: center;
+}
+
+.contact-img {
+  display: flex;
+  width: 50%;
+  height: 450px;
+  border-radius: 30px 0 0 30px;
+}
+.contact-input {
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid white;
+  outline: none;
+  transition: 0.5s;
+  background-color: var(--primary-color);
+  font-weight: bold;
+}
+.contact-input:hover,
+:focus {
+  scale: 1.05;
+}
+
+.contact-input::placeholder {
+  color: var(--white);
+}
+
+.contact-button {
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid white;
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+.contact-button:hover {
+  scale: 1.05;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 15px;
+}
+@media (min-width: 767px) and (max-width: 1400px) {
+  .contact-container {
+    width: 90%;
+  }
+
+  .contact-head p {
+    width: 80%;
+  }
+}
+@media (max-width: 766px) {
+  .contact-container {
+    width: 70%;
+  }
+
+  .contact-head {
+    width: 100%;
+  }
+  .contact-head p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .contact-body {
+    flex-direction: column;
+    height: auto;
+
+    margin-top: 30px;
+  }
+  .contact-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px 30px 0 0;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .contact-form input {
+    width: 100%;
+  }
+}

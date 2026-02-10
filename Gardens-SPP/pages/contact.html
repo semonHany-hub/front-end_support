@@ -1,13 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/CSS/root.css">
-    <link rel="stylesheet" href="../assets/CSS/contact.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/CSS/root.css" />
+    <link rel="stylesheet" href="../assets/CSS/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="contact-container">
+      <div class="contact-head">
+        <h1>Contact <span>Us</span></h1>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ut
+          corporis, maxime excepturi illo quo voluptatum molestiae. Placeat,
+          error eos?
+        </p>
+      </div>
+      <div class="contact-body">
+        <img
+          class="contact-img"
+          src="../assets/images/contact.png"
+          alt="contact-photo"
+        />
+
+        <form class="contact-form" action="#">
+          <label for="contact-fullname">Full Name</label>
+          <input
+            type="text"
+            class="contact-input"
+            id="contact-fullname"
+            placeholder="Enter your full name "
+            required
+          />
+
+          <label for="contact-email">Email</label>
+          <input
+            type="email"
+            class="contact-input"
+            id="contact-email"
+            placeholder="Enter your email "
+            required
+          />
+
+          <label for="contact-message">Message</label>
+          <input
+            type="text"
+            class="contact-input"
+            id="contact-message"
+            placeholder="Enter your message "
+            required
+          />
+
+          <input type="submit" class="contact-button" value="Read More" />
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
