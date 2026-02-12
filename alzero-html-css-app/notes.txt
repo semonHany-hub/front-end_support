@@ -1,0 +1,5 @@
+- get normalise css file from its webpage for some standard styles.
+- get the font family 'work sans' from google fonts, its link tags and styles to apply.
+- install font awesome web icons. copy the 'webfonts' folder to assets and 'all.min.css' to CSS project folder.
+- 'all.min.css' is the minimized file of 'all.css' which embedded to use icons in webfonts.
+- there are some built-in size classes for i tag : fa-xs (extra-small), fa-sm (small), fa-lg (large), fa-2x to fa-10x (multiple sizes).

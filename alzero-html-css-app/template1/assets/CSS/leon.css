@@ -1,0 +1,154 @@
+/* .work-sans-<uniquifier> {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+:root{
+    --primary-color: #10c9b7;
+    --work-sans: "Work Sans", sans-serif;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+header .container{
+    width:80%;
+    padding:0.3em 0.2em;
+    margin:0.3em auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header .logo{
+    width:2.5em;
+}
+
+header .icon{
+    display:flex;
+    flex-direction:column;
+    gap:0.2em;
+    align-items:flex-end;
+}
+
+header .icon span{
+    background-color:#333;
+}
+
+header .icon span:first-child{
+    width:1em;
+    height:0.1em;
+}
+
+header .icon span:nth-child(2){
+    width:0.7em;
+    height:0.1em;
+    transition:0.4s;
+}
+
+header .icon span:last-child{
+    width:1em;
+    height:0.12em;
+}
+
+header .links:hover .icon span:nth-child(2){
+    width:1em;
+}
+
+header .links{
+    position:relative;
+}
+
+header .links ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    background-color:#eee;
+    position:absolute;
+    right:0;
+    top:calc(100% + 1em);
+    width:12em;
+    display:none;
+}
+
+header .links ul::before{
+    content:"";
+    border-width:0.5em;
+    border-style:solid;
+    border-color: transparent transparent #eee transparent;
+    position:absolute;
+    right:0.2em;
+    top:-1em;
+}
+
+header .links ul a{
+    text-decoration:none;
+    color:#333;
+    display:block;
+    transition: all 0.4s;
+}
+
+header .links ul a:hover{
+    /* transform: translateX(0.5em); */
+    padding-left: 0.5em;
+}
+
+header .links ul li{
+    padding:0.3em 0.5em;
+    font-family: var(--work-sans);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9em;
+}
+
+header .links ul li:not(:last-child){
+    border-bottom:1px solid #ddd;
+}
+
+header .links:hover ul{
+    display:block;
+    z-index:1;
+}
+
+/*landing section*/
+.landing{
+    background-image:url("../images/mountains.webp");
+    background-size:cover;
+    /* background-position:center; */
+    height: calc(100vh - 42px);
+    position:relative;
+}
+
+.landing .intro-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%); /*for prefix offset*/
+    width:300px;
+    max-width:100%;
+    padding:0.4em;
+    text-align:center;
+    font-family: var(--work-sans);
+}/*centering item with position done by setting top,left (not bottom,right) to 50%*/
+
+.landing .intro-text h1{
+    margin:0;
+    color:var(--primary-color);
+    font-size:2.5em;
+}
+
+.landing .intro-text p{
+    line-height:1.2em;
+    font-weight: 400;
+    font-size:1em;
+}
