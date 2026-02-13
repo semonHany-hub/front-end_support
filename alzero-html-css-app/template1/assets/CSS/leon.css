@@ -362,7 +362,7 @@ p.muted-text{
 
 .about .about-content .about-text{
     padding:0.5em;
-    flex-basis:500px;
+    flex-basis:calc(100% - 400px); /*will be more responsive than when set static flex-basis (e.g 500px)*/
 }
 
 .about .about-text p:first-of-type{
@@ -396,10 +396,6 @@ p.muted-text{
 
     .about .image{
         margin:0.5em 0;
-    }
-
-    .about .about-content .about-text{
-        flex-basis: 300px;
     }
 }
 
