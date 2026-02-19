@@ -6,3 +6,8 @@
 - the default value for 'z-index' is auto .works with the positioned elements (has position value other than static). to move element forward give value '1' or '-1' to move backward. 
 - to center text elements (headings, paragraphs or images) in a container use 'text-align', but to center other containers use flex-box or position.
 - flex-basis differ from actual 'width' in that it is a flexbox-only property. Defines the initial main size of a flex item before free space is distributed.
+
+- select the pseuo-elment ::after to add styles on when the origial element hoverd->  elem:hove::after
+- select the next sibling element to style when its previous sibling hovered->  elem:hover + sibling-elem
+- select a descendent element to style when its parent hovered->  elem:hover descendent-elem
+- force hover state on the condensed-nav in header from browser inspect during development.
