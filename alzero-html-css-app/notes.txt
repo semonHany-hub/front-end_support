@@ -11,3 +11,5 @@
 - select the next sibling element to style when its previous sibling hovered->  elem:hover + sibling-elem
 - select a descendent element to style when its parent hovered->  elem:hover descendent-elem
 - force hover state on the condensed-nav in header from browser inspect during development.
+- some font awesome icond doesn't appear until we give them 'font-weight' value.
+- to use font awesome icon as pseudo element (not real element in the DOM)-> use its unicode(unique code) as a value for 'content' forwarded by '\' + use 'font-family: "Font Awesome 5 Free"'.
