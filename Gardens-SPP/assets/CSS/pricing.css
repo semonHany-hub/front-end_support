@@ -43,6 +43,10 @@
     font-weight:bold;
 }
 
+.card-body{
+    padding:7px 15px;
+}
+
 .price{
     font-size:42px;
     color:#34c38f;
@@ -55,13 +59,13 @@
     margin-bottom:25px;
 }
 
-ul{
+.pricing .card-body ul{
     list-style:none;
     padding:0 30px;
     text-align:left;
 }
 
-ul li{
+.pricing .card-body ul li{
     padding:14px 0 14px 25px;
     border-bottom:1px solid rgba(52,195,143,0.25); /* خط أخضر فاتح */
     color:#555;
@@ -69,12 +73,12 @@ ul li{
 }
 
 /* علامة الصح بدون دايرة */
-ul li::before{
+.pricing .card-body ul li::before{
     content:"✔";
     position:absolute;
     left:0;
     color:#34c38f;
-    font-size:14px;
+    font-size:14px; 
 }
 
 /* Premium Card */
@@ -101,7 +105,7 @@ ul li::before{
     color:#34c38f;
 }
 
-button{
+.pricing .card-body button{
     margin-top:25px;
     padding:12px 30px;
     border:none;

@@ -9,13 +9,14 @@ h2{
 }
 
 #about{
-    margin:2em 1em;
+    /* margin:2em 1em; */
+    width: 100%;
     padding:1em 2em;
 }
 
 .about-head{
-    margin-bottom:1em;
-    width:70%;
+    margin-bottom:2em;
+    width:100%;
 }
 
 .about-head>p{
@@ -60,26 +61,19 @@ h2{
     border-radius:0.5em;
 }
 
-@media (max-width: 550px){
+@media (max-width: 700px){
     .about-body{
         flex-direction: column;
     }
 
     #about img{
-        width:20em;
+        /* width:20em;
         height:20em;
-        margin:0 auto;
+        margin:0 auto; */
+        display: none;
     }
 
     h2{
         font-size:1.5em;
     }
 }
-
-/* @media (max-width: 350px){
-
-    #about img{
-        width:15em;
-        height:18em;
-    }
-} */
