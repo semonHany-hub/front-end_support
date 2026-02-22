@@ -1,0 +1,112 @@
+.pricing{
+    padding:70px 20px;
+}
+
+.pricing h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.pricing h1 span{
+    color:#34c38f;
+}
+
+.subtitle{
+    color: #888;
+    margin: 0 auto 50px auto;
+    max-width: 600px;        
+    line-height: 1.6;         
+    font-size: 16px;           
+    text-align: center;        
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:300px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    overflow:hidden;
+    padding-bottom:25px;
+}
+
+.card-header{
+    background:#34c38f;
+    color:white;
+    padding:18px;
+    font-weight:bold;
+}
+
+.price{
+    font-size:42px;
+    color:#34c38f;
+    margin-top:25px;
+    font-weight:bold;
+}
+
+.month{
+    color:#888;
+    margin-bottom:25px;
+}
+
+ul{
+    list-style:none;
+    padding:0 30px;
+    text-align:left;
+}
+
+ul li{
+    padding:14px 0 14px 25px;
+    border-bottom:1px solid rgba(52,195,143,0.25); /* خط أخضر فاتح */
+    color:#555;
+    position:relative;
+}
+
+/* علامة الصح بدون دايرة */
+ul li::before{
+    content:"✔";
+    position:absolute;
+    left:0;
+    color:#34c38f;
+    font-size:14px;
+}
+
+/* Premium Card */
+.premium{
+    background:#34c38f;
+    color:white;
+}
+
+.premium .price{
+    color:white;
+}
+
+.premium ul li{
+    border-bottom:1px solid rgba(255,255,255,0.3);
+    color:white;
+}
+
+.premium ul li::before{
+    color:white;
+}
+
+.premium button{
+    background:white;
+    color:#34c38f;
+}
+
+button{
+    margin-top:25px;
+    padding:12px 30px;
+    border:none;
+    border-radius:25px;
+    background:#34c38f;
+    color:white;
+    cursor:pointer;
+}

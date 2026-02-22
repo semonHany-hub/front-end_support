@@ -1,0 +1,141 @@
+/* Why Choose Us Section */
+.why {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.why__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 0 40px;
+}
+
+.why__image {
+    flex: 1;
+    height: 560px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: var(--shadow-big);
+    position: relative;
+}
+
+.why__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% center;
+}
+
+.why__content {
+    flex: 1;
+}
+
+.why__title {
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--black);
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.why__title span {
+    color: var(--primary-color);
+}
+
+.why__description {
+    font-size: 15px;
+    color: var(--dark-gray);
+    line-height: 1.9;
+    margin-bottom: 40px;
+    max-width: 520px;
+}
+
+.why__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.why__list li {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.why__list i {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* Large Tablets */
+@media (max-width: 1200px) {
+    .why__wrapper {
+        gap: 50px;
+        padding: 0 30px;
+    }
+    .why__title {
+        font-size: 42px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    .why {
+        padding: 80px 20px;
+    }
+    .why__wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    .why__image {
+        width: 100%;
+        height: 450px;
+    }
+    .why__image img {
+        object-position: center;
+    }
+    .why__description {
+        margin: 0 auto 30px;
+        max-width: 100%;
+    }
+    .why__list li {
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .why {
+        padding: 60px 15px;
+    }
+    .why__title {
+        font-size: 28px;
+    }
+    .why__image {
+        height: 280px;
+    }
+    .why__list {
+        gap: 18px;
+    }
+    .why__list li {
+        font-size: 16px;
+    }
+    .why__list i {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+}
