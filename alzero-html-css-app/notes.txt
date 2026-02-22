@@ -13,3 +13,4 @@
 - force hover state on the condensed-nav in header from browser inspect during development.
 - some font awesome icond doesn't appear until we give them 'font-weight' value.
 - to use font awesome icon as pseudo element (not real element in the DOM)-> use its unicode(unique code) as a value for 'content' forwarded by '\' + use 'font-family: "Font Awesome 5 Free"'.
+- transform property receive values for (scale(X, Y), translate(X, Y), rotate( deg)), its transition duration and effect controlled by 'transition' property gave to the element fixed styles.
